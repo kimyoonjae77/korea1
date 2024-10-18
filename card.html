@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>card프로모션</title>
     <link rel="stylesheet" href="card.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -85,8 +88,6 @@
                         <div class="circle box2"><img src="images/card1_2.png" alt="뒤"></div>
                     </div>
                 </div>
-                <canvas id="fireworksCanvas"></canvas>
-
                 <!-- <ul class="quick_menu">
                     <li><a href="#"><img src="/images/quick_menu1.png" alt="이용요금"></a></li>
                     <li><a href="#"><img src="/images/quick_menu2.png" alt="이달의할인"></a></li>
@@ -94,44 +95,59 @@
                 </ul> -->
             </div>
             <div class="main2">
-                <p>신한카드</p>
-                <p>최대혜택 50% </p>
-                <p>신나는!! <br>
-                    할인혜택
-                </p>
-                <div class="orange_line1"></div>
-                <div class="orange_line2"></div>
-                <div>
-                    <img src="images/card_1.png" alt="신한">
-                    <div class="discount_circle1">50%</div>
+                <div class="main2_wrapper">
+                    <p class="fp target1">신한카드</p>
+                    <p class="sp target1">최대혜택 50%</p>
+                    <div class="txt_box target1">
+                        <p class="tp">신나는!!</p>
+                        <p class="fp2">할인혜택</p>
+                    </div>
+                    <div class="card_img card_img1 target1">
+                        <img src="images/card_1.png" alt="신한">
+                        <div class="discount_circle1">50%</div>
+                    </div>
+                    <div class="card_img_cont1">
+                        <img src="images/card_5_04.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="main3">
-                <p>국민카드</p>
-                <p>KB국민<br>
-                    카드 결제 시,<br>
-                    청구 할인<br>
-                    최대 50%
-                </p>
-                <div class="gold_line"></div>
-                <div>
-                    <img src="images/card_2.png" alt="국민">
-                    <div class="discount_circle2">50%</div>
+                <div class="main3_wrapper">
+                    <p class="target2">국민카드</p>
+                    <p class="target2">KB국민<br>
+                        카드 결제 시,<br>
+                        청구 할인<br>
+                        최대 50%
+                    </p>
+                    <div class="gold_line target2"></div>
+                    <div class="card_img card_img2 target2">
+                        <img src="images/card_2.png" alt="국민">
+                        <div class="discount_circle2">50%</div>
+                    </div>
+                    <div class="card_img_cont2">
+                        <img src="images/card_5_04.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="main4">
-                <p>현대카드</p>
-                <p>초특가 할인 혜택!! <br>
-                    대한민국 유일 <br>
-                    테마파크 <br>
-                    50% 할인
-                </p>
-                <div class="blue_line"></div>
-                <div>
-                    <img src="images/card_3.png" alt="현대">
-                    <div class="discount_circle3">50%</div>
+                <div class="main4_wrapper">
+                    <p class="target3">현대카드</p>
+                    <p class="target3">초특가 할인 혜택!! <br>
+                        대한민국 유일 <br>
+                        테마파크 <br>
+                        50% 할인
+                    </p>
+                    <div class="blue_line target3"></div>
+                    <div class="card_img card_img3 target3">
+                        <img src="images/card_3.png" alt="현대">
+                        <div class="discount_circle3">50%</div>
+                    </div>
+                    <div class="card_img_cont3">
+                        <img src="images/card_5_04.png" alt="">
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="quick">
             <ul class="quick_menu">
@@ -161,6 +177,7 @@
             </ul>
             <div class="acc_bell"><img src="images/index_9_0.png" alt="풍경"></div>
         </div>
+
     </div>
     <div id="footer">
         <hr>
@@ -226,7 +243,7 @@
         </div>
 
     </div>
-    <script src="fireworks.js"></script>
+
 </body>
 
 </html>

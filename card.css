@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -206,7 +207,11 @@ canvas {
 }
 
 /* section영역 */
-#section .card_promo {}
+#section .card_promo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
 /* main1영역--------------------------------------------------------------------- */
 #section .card_promo .main1 {
@@ -313,69 +318,133 @@ canvas {
     width: 100%;
     height: 718px;
     background-image: url(images/Card_2.jpg);
-    position: relative;
+    /* background-color: blue; */
+    /* position: relative; */
     margin-top: -3px;
+}
+
+#section .card_promo .main2 .main2_wrapper {
+    position: relative;
+    width: 1280px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* background-color: red; */
+
 }
 
 #section .card_promo .main2 p {
     color: white;
+    transition: all 1s ease;
 }
 
-#section .card_promo .main2 p:nth-child(1) {
+#section .card_promo .main2 .fp {
     font-size: 20pt;
     /* padding-left: 350px;
     padding-top: 30px; */
     position: absolute;
-    left: 330px;
+    left: 0px;
     top: 20px;
+    opacity: 0;
 }
 
-#section .card_promo .main2 p:nth-child(2) {
+#section .card_promo .main2 .fp.on {
+    left: 0px;
+    opacity: 1;
+}
+
+#section .card_promo .main2 .sp {
     font-size: 30pt;
     /* padding-left: 500px;
     padding-top: 100px; */
     position: absolute;
-    left: 470px;
+    left: -670px;
     top: 150px;
     text-align: center;
+    opacity: 0;
 }
 
-#section .card_promo .main2 p:nth-child(3) {
-    font-size: 35pt;
+#section .card_promo .main2 .sp.on {
+    left: 150px;
+    opacity: 1;
+}
+
+#section .card_promo .main2 .main2_wrapper .txt_box {
     position: absolute;
-    left: 480px;
-    top: 230px;
-    text-align: center;
-    z-index: 1;
+    top: 250px;
+    left: -570px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* top: 100px; */
+    opacity: 0;
+    transition: all 1s ease;
 }
 
-#section .card_promo .main2 .orange_line1 {
+#section .card_promo .main2 .main2_wrapper .txt_box.on {
+    opacity: 1;
+    left: 170px;
+}
+
+#section .main2_wrapper .txt_box p {
+    font-size: 35pt;
+    /* /* position: absolute; */
+    /* left: 0px; */
+    /* top: 0px; */
+    /* text-align: center; */
+    /* z-index: 1; */
     width: 180px;
     height: 33px;
-    background-color: #f26622;
-    position: absolute;
-    left: 480px;
-    top: 263px;
-    z-index: 0;
+    /* background-color: linear-gradient(to top, #f26622, transparent); */
+    /* background-color: #f26622; */
+    /* bottom: ; */
 }
 
-#section .card_promo .main2 .orange_line2 {
-    width: 200px;
+#section .main2_wrapper .txt_box .tp::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
     height: 33px;
+    z-index: -1;
     background-color: #f26622;
-    position: absolute;
-    left: 470px;
-    top: 333px;
-    z-index: 0;
 }
 
-#section .card_promo .main2>div {
+#section .main2_wrapper .txt_box .tp {
+    margin-bottom: 30px;
+}
+
+#section .main2_wrapper .txt_box .fp2::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 33px;
+    z-index: -1;
+    background-color: #f26622;
+}
+
+
+
+
+
+#section .card_promo .main2 .card_img1 {
     position: absolute;
     width: 600px;
     height: 500px;
     /* background-color: aqua; */
-    left: 740px;
+    right: -1450px;
+    transform: translateX(50%);
     top: 150px;
+    transition: all 1s ease;
+    /* opacity: ; */
+}
+
+#section .card_promo .main2 .card_img1.on {
+    right: 45%;
+
 }
 
 #section .card_promo .main2 .discount_circle1 {
@@ -392,20 +461,44 @@ canvas {
     position: absolute;
     right: 65px;
     top: -30px;
-
-
 }
+
+
+
+#section .card_img_cont1 {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 57%;
+    transform: translateX(-50%) rotateY(-180deg);
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+
 
 /* main3영역-------------------------------------------------- */
 #section .card_promo .main3 {
     width: 100%;
     height: 708px;
     background-image: url(images/Card_3.jpg);
+    /* position: relative; */
+}
+
+#section .card_promo .main3 .main3_wrapper {
     position: relative;
+    width: 1280px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* background-color: red; */
 }
 
 #section .card_promo .main3 p {
     color: white;
+    transition: all 1s ease;
 }
 
 #section .card_promo .main3 p:nth-child(1) {
@@ -414,8 +507,13 @@ canvas {
     /* padding-left: 350px;
     padding-top: 30px; */
     position: absolute;
-    left: 330px;
+    left: 0px;
     top: 20px;
+    opacity: 0;
+}
+
+#section .card_promo .main3 p:nth-child(1).on {
+    opacity: 1;
 }
 
 #section .card_promo .main3 p:nth-child(2) {
@@ -423,11 +521,18 @@ canvas {
     /* padding-left: 500px;
     padding-top: 100px; */
     position: absolute;
-    left: 1150px;
+    width: 250px;
+    right: -630px;
     top: 150px;
     text-align: center;
     z-index: 1;
+    opacity: 0;
 
+}
+
+#section .card_promo .main3 p:nth-child(2).on {
+    opacity: 1;
+    right: 190px;
 }
 
 #section .card_promo .main3 .gold_line {
@@ -435,18 +540,31 @@ canvas {
     height: 30px;
     background-color: #ffbb00c7;
     position: absolute;
-    left: 1180px;
-    top: 335px;
+    right: -730px;
+    top: 345px;
     z-index: 0;
+    opacity: 0;
+    transition: all 1s ease;
 }
 
-#section .card_promo .main3>div {
+#section .card_promo .main3 .gold_line.on {
+    opacity: 1;
+    right: 210px;
+}
+
+#section .card_promo .main3 .card_img2 {
     position: absolute;
     width: 600px;
     height: 500px;
     /* background-color: aqua; */
-    left: 500px;
+    left: -200%;
+    transform: translateX(-50%);
     top: 150px;
+    transition: all 1s ease;
+}
+
+#section .card_promo .main3 .card_img2.on {
+    left: 40%;
 }
 
 #section .card_promo .main3 .discount_circle2 {
@@ -465,6 +583,18 @@ canvas {
     top: -30px;
 }
 
+#section .card_img_cont2 {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 42%;
+    transform: translateX(-50%) rotateY(-180deg);
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+
 /* main4영역------------------------------------ */
 #section .card_promo .main4 {
     width: 100%;
@@ -473,8 +603,19 @@ canvas {
     position: relative;
 }
 
+#section .card_promo .main4 .main4_wrapper {
+    position: relative;
+    width: 1280px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* background-color: red; */
+}
+
 #section .card_promo .main4 p {
     color: white;
+    transition: all 1s ease;
 }
 
 #section .card_promo .main4 p:nth-child(1) {
@@ -483,8 +624,13 @@ canvas {
     /* padding-left: 350px;
     padding-top: 30px; */
     position: absolute;
-    left: 330px;
+    left: 0px;
     top: 20px;
+    opacity: 0;
+}
+
+#section .card_promo .main4 p:nth-child(1).on {
+    opacity: 1;
 }
 
 #section .card_promo .main4 p:nth-child(2) {
@@ -492,10 +638,16 @@ canvas {
     /* padding-left: 500px;
     padding-top: 100px; */
     position: absolute;
-    left: 470px;
+    left: -550px;
     top: 150px;
     text-align: center;
     z-index: 1;
+    opacity: 0;
+}
+
+#section .card_promo .main4 p:nth-child(2).on {
+    opacity: 1;
+    left: 150px;
 }
 
 #section .card_promo .main4 .blue_line {
@@ -503,18 +655,31 @@ canvas {
     height: 30px;
     background-color: #aacbde;
     position: absolute;
-    left: 450px;
+    left: -550px;
     top: 174px;
     z-index: 0;
+    opacity: 0;
+    transition: all 1s ease;
 }
 
-#section .card_promo .main4>div {
+#section .card_promo .main4 .blue_line.on {
+    opacity: 1;
+    left: 150px;
+}
+
+#section .card_promo .main4 .card_img3 {
     position: absolute;
     width: 600px;
     height: 500px;
     /* background-color: aqua; */
-    left: 740px;
+    left: 255%;
+    transform: translateX(-50%);
     top: 150px;
+    transition: all 1s ease;
+}
+
+#section .card_promo .main4 .card_img3.on {
+    left: 55%;
 }
 
 #section .card_promo .main4 .discount_circle3 {
@@ -532,6 +697,21 @@ canvas {
     right: 65px;
     top: -30px;
 }
+
+#section .card_img_cont3 {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 56%;
+    transform: translateX(-50%) rotateY(-180deg);
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+
+/* -----------card_img_cont------------------- */
+
 
 /* ---------------------quick_menu */
 #section .quick .quick_menu {
