@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction</title>
+    <link rel="stylesheet" href="attractions.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="attraction.js"></script>
+</head>
+
+<body>
+    <div id="header0">
+        <div class="gnb2">
+            <div class="gnb_al clearFix">
+                <h1 class="logo">
+                    <a href="index.html"><img src="images/index_2_1_2.png" alt="로고"></a>
+                </h1>
+                <ul class="menu">
+                    <li>
+                        <a href="#">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="https://www.koreanfolk.co.kr/information/hours.asp">운영시간</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/information/convenience.asp">편의시설</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/information/traffic.asp">교통/주차안내</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/information/notice_list.asp">공지사항</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/information/guide_map.asp">가이드맵</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/information/faq.asp">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="card.html">요금/예약</a>
+                        <ul class="sub">
+                            <li><a href="https://www.koreanfolk.co.kr/price/charge.asp">이용요금</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/price/promotion.asp">이달의 할인</a></li>
+                            <li><a href="card.html">제휴카드 할인</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/price/membership.asp">연간회원 안내</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/group/daily.asp">단체 프로그램 예약</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/group/traditionalWedding.asp">전통혼례(실혼)예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="attraction.html">즐길거리</a>
+                        <ul class="sub">
+                            <li><a href="https://www.koreanfolk.co.kr/event/event_now.asp">특별행사</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/event/performance_today.asp">공연안내</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/event/experience.asp">체험/전시</a></li>
+                            <li><a href="attractions.html">어트랙션</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/purchase/restaurant.asp">먹거리</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/purchase/shop.asp">살거리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">한국민속촌 소개</a>
+                        <ul class="sub">
+                            <li><a href="https://www.koreanfolk.co.kr/about/intro.asp">한국민속촌 소개</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/about/history.asp">과거 그리고 미래</a></li>
+                            <li><a href="https://www.koreanfolk.co.kr/about/brand_intro.asp">브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="side_menu clearFix">
+                    <li>
+                        <img src="images/index_2_2_2.png" alt="검색">
+                    </li>
+                    <li>
+                        <select>
+                            <option value="KR">KR</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------ -->
+    <div id="header">
+        <div class="header_wrap1">
+            <div class="header_wrap2">
+                <div class="header_wrap3">
+                    <h1>어트랙션</h1>
+                    <!-- <h2>한국 민속촌의 신나고 재미있는 놀이시설에서 행복한 시간을 보내세요.</h2> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section">
+        <div class="bg_line_wrap">
+            <div class="bg_line bg_line01"></div>
+            <div class="bg_line bg_line02"></div>
+            <div class="bg_line bg_line03"></div>
+        </div>
+        <div class="quick">
+            <ul class="quick_menu">
+                <li class="team">
+                    <img src="images/index_1_1.png" alt="단체예약">
+                    <a class="quick_back" href="https://www.koreanfolk.co.kr/group/daily.asp">
+                        <img src="images/index_1_5.png" alt="화살표">
+                    </a>
+                </li>
+                <li class="guide">
+                    <img src="images/index_1_2.png" alt="가이드맵">
+                    <a class="quick_back" href="https://www.koreanfolk.co.kr/information/guide_map.asp">
+                        <img src="images/index_1_5.png" alt="화살표">
+                    </a>
+                </li>
+                <li class="come">
+                    <img src="images/index_1_3.png" alt="오시는길">
+                    <a class="quick_back" href="https://www.koreanfolk.co.kr/information/traffic.asp">
+                        <img src="images/index_1_5.png" alt="화살표">
+                    </a>
+                </li>
+                <li class="top">
+                    <a href="#">
+                        <img src="images/index_1_4.png" alt="top">
+                    </a>
+                </li>
+            </ul>
+            <div class="acc_bell"><img src="images/index_9_0.png" alt="풍경"></div>
+        </div>
+        <!-- ------------------------------------------------ -->
+        <div class="height">
+            <div class="scope_wrap">
+                <div class="scope"><img src="images/attraction_scope.png" alt="돋보기"></div>
+                <h3>키에 맞는 탑승 가능한 어트랙션을 확인하세요!</h3>
+            </div>
+            <p>키</p>
+            <div class="height_tab">
+                <div class="line"></div>
+                <div class="dot"></div>
+                <ul class="height_line">
+                    <li class = "active">90CM</li>
+                    <li>110CM</li>
+                    <li>130CM</li>
+                    <li >150CM 이상</li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- ------------------------------------------------ -->
+        <ul class="att_list">
+            <li>
+                <ul class="step1 clearFix">
+                    <li class="mini_viking">
+                        <p class="hashtag">#미니바이킹 <br>#용감한 어린이</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_1.png" alt="미니바이킹">
+                            <p class="name">미니바이킹</p>
+                        </div>
+                    </li>
+                    <li class="boat_ride">
+                        <p class="hashtag">#물길따라 여행 <br>#커플코스 #신선놀음</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_2.png" alt="보트라이드">
+                            <p class="name">보트라이드</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="step2 clearFix">
+                    <li class="mini_viking">
+                        <p class="hashtag">#미니바이킹 <br>#용감한 어린이</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_1.png" alt="미니바이킹">
+                            <p class="name">미니바이킹</p>
+                        </div>
+                    </li>
+                    <li class="boat_ride">
+                        <p class="hashtag">#물길따라 여행 <br>#커플코스 #신선놀음</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_2.png" alt="보트라이드">
+                            <p class="name">보트라이드</p>
+                        </div>
+                    </li>
+                    <li class="family_coaster">
+                        <p class="hashtag">#롤러코스터 #쾌속 <br>#숲속 열차</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_1.png" alt="패밀리코스터">
+                            <p class="name">패밀리코스터</p>
+                            <div class="att_img"></div>
+                    </li>
+                    <li class="viking">
+                        <p class="hashtag">#바이킹 #해적왕 <br>#최대 120도</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_2.png" alt="바이킹">
+                            <p class="name">바이킹</p>
+                        </div>
+                    </li>
+                    <li class="train">
+                        <p class="hashtag">#칙칙폭폭 #꼬마기차 <br>#순환여행</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_3.png" alt="순환열차">
+                            <p class="name">순환열차</p>
+                        </div>
+                    </li>
+                    <li class="marry_go_round">
+                        <p class="hashtag">#백마 탄 왕자님 <br>#공주님 마차 <br>#동화속 주인공</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_4.png" alt="회전목마">
+                            <p class="name">회전목마</p>
+                        </div>
+                    </li>
+                    <li class="mini_droptwist">
+                        <p class="hashtag">#미니낙하 <br>#강심장</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_5.png" alt="미니드랍트위스트">
+                            <p class="name">미니드랍트위스트</p>
+                        </div>
+                    </li>
+                    <li class="bounce_swing">
+                        <p class="hashtag">#업앤다운 #24인승 <br>#12지신 친구들</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_6.png" alt="바운스스윙">
+                            <p class="name">바운스스윙</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="step3 clearFix">
+                    <li class="mini_viking">
+                        <p class="hashtag">#미니바이킹 <br>#용감한 어린이</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_1.png" alt="미니바이킹">
+                            <p class="name">미니바이킹</p>
+                        </div>
+                    </li>
+                    <li class="boat_ride">
+                        <p class="hashtag">#물길따라 여행 <br>#커플코스 #신선놀음</p>
+                        <div class="att_img">
+                            <img src="images/attractions_90_2.png" alt="보트라이드">
+                            <p class="name">보트라이드</p>
+                        </div>
+                    </li>
+                    <li class="family_coaster">
+                        <p class="hashtag">#롤러코스터 #쾌속 <br>#숲속 열차</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_1.png" alt="패밀리코스터">
+                            <p class="name">패밀리코스터</p>
+                            <div class="att_img"></div>
+                    </li>
+                    <li class="viking">
+                        <p class="hashtag">#바이킹 #해적왕 <br>#최대 120도</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_2.png" alt="바이킹">
+                            <p class="name">바이킹</p>
+                        </div>
+                    </li>
+                    <li class="train">
+                        <p class="hashtag">#칙칙폭폭 #꼬마기차 <br>#순환여행</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_3.png" alt="순환열차">
+                            <p class="name">순환열차</p>
+                        </div>
+                    </li>
+                    <li class="marry_go_round">
+                        <p class="hashtag">#백마 탄 왕자님 <br>#공주님 마차 <br>#동화속 주인공</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_4.png" alt="회전목마">
+                            <p class="name">회전목마</p>
+                        </div>
+                    </li>
+                    <li class="mini_droptwist">
+                        <p class="hashtag">#미니낙하 <br>#강심장</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_5.png" alt="미니드랍트위스트">
+                            <p class="name">미니드랍트위스트</p>
+                        </div>
+                    </li>
+                    <li class="bounce_swing">
+                        <p class="hashtag">#업앤다운 #24인승 <br>#12지신 친구들</p>
+                        <div class="att_img">
+                            <img src="images/attractions_110_6.png" alt="바운스스윙">
+                            <p class="name">바운스스윙</p>
+                        </div>
+                    </li>
+                    <li class="magic_tcup">
+                        <p class="hashtag">#커피컵 #무한회전 <br>#신나는 티파티</p>
+                        <div class="att_img">
+                            <img src="images/attractions_130_1.png" alt="매직티컵">
+                            <p class="name">매직티컵</p>
+                        </div>
+                    </li>
+                    <li class="bumpercar">
+                        <p class="hashtag">#스릴만점 #드라이빙 <br>#박치기</p>
+                        <div class="att_img">
+                            <img src="images/attractions_130_2.png" alt="범퍼카">
+                            <p class="name">범퍼카</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="step4 clearFix">
+                    <li class="mini_viking">
+                        <p class="hashtag">#미니바이킹 <br>#용감한 어린이</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_miniviking.asp">
+                                <img src="images/attractions_90_1.png" alt="미니바이킹">
+                            </a>
+                            <p class="name">미니바이킹</p>
+                        </div>
+                    </li>
+                    <li class="boat_ride">
+                        <p class="hashtag">#물길따라 여행 <br>#커플코스 #신선놀음</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_boat.asp">
+                                <img src="images/attractions_90_2.png" alt="보트라이드">
+                            </a>
+                            <p class="name">보트라이드</p>
+                        </div>
+                    </li>
+                    <li class="family_coaster">
+                        <p class="hashtag">#롤러코스터 #쾌속 <br>#숲속 열차</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_family.asp">
+                                <img src="images/attractions_110_1.png" alt="패밀리코스터">
+                            </a>
+                            <p class="name">패밀리코스터</p>
+                        </div>
+                    </li>
+                    <li class="viking">
+                        <p class="hashtag">#바이킹 #해적왕 <br>#최대 120도</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_viking.asp">
+                                <img src="images/attractions_110_2.png" alt="바이킹">
+                            </a>
+                            <p class="name">바이킹</p>
+                        </div>
+                    </li>
+                    <li class="train">
+                        <p class="hashtag">#칙칙폭폭 #꼬마기차 <br>#순환여행</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_train.asp">
+                                <img src="images/attractions_110_3.png" alt="순환열차">
+                            </a>
+                            <p class="name">순환열차</p>
+                        </div>
+                    </li>
+                    <li class="marry_go_round">
+                        <p class="hashtag">#백마 탄 왕자님 <br>#공주님 마차 <br>#동화속 주인공</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_merrygoround.asp">
+                                <img src="images/attractions_110_4.png" alt="회전목마">
+                            </a>
+                            <p class="name">회전목마</p>
+                        </div>
+                    </li>
+                    <li class="mini_droptwist">
+                        <p class="hashtag">#미니낙하 <br>#강심장</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_dropmini.asp">
+                                <img src="images/attractions_110_5.png" alt="미니드랍트위스트">
+                            </a>
+                            <p class="name">미니드랍트위스트</p>
+                        </div>
+                    </li>
+                    <li class="bounce_swing">
+                        <p class="hashtag">#업앤다운 #24인승 <br>#12지신 친구들</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_bounce.asp">
+                                <img src="images/attractions_110_6.png" alt="바운스스윙">
+                            </a>
+                            <p class="name">바운스스윙</p>
+                        </div>
+                    </li>
+                    <li class="magic_tcup">
+                        <p class="hashtag">#커피컵 #무한회전 <br>#신나는 티파티</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_magic.asp">
+                                <img src="images/attractions_130_1.png" alt="매직티컵">
+                            </a>
+                            <p class="name">매직티컵</p>
+                        </div>
+                    </li>
+                    <li class="bumpercar">
+                        <p class="hashtag">#스릴만점 #드라이빙 <br>#박치기</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_bumperCar.asp">
+                                <img src="images/attractions_130_2.png" alt="범퍼카">
+                            </a>
+                            <p class="name">범퍼카</p>
+                        </div>
+                    </li>
+                    <li class="huanted_house">
+                        <p class="hashtag">#민속신앙 #귀신의 집 #역대급 K-호러</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_ghost.asp">
+                                <img src="images/attractions_150_1.png" alt="귀신전">
+                            </a>
+                            <p class="name">귀신전</p>
+                        </div>
+                    </li>
+                    <li class="legand_village">
+                        <p class="hashtag">#심약자 주의 #구미호 #리얼공포</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_hometown.asp">
+                                <img src="images/attractions_150_2.png" alt="전설의 고향">
+                            </a>
+                            <p class="name">전설의 고향</p>
+                        </div>
+                    </li>
+                    <li class="droptwist">
+                        <p class="hashtag">#자유낙하 #무중력 <br>#급하강</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_droptwist.asp">
+                                <img src="images/attractions_150_3.png" alt="드랍트위스트">
+                            </a>
+                            <p class="name">드랍트위스트</p>
+                        </div>
+                    </li>
+                    <li class="crazy_swing">
+                        <p class="hashtag">#멀미주의 <br>#스릴라이드 <br>#360도 회전</p>
+                        <div class="att_img">
+                            <a href="https://www.koreanfolk.co.kr/event/attraction_crazy.asp">
+                                <img src="images/attractions_150_4.png" alt="크레이지스윙">
+                            </a>
+                            <p class="name">크레이지스윙</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </section>
+        <div id="footer">
+            <div class="ft_wrap">
+                <h1>※ 이용안내</h1>
+                <p>– 기상악화(폭우, 강풍, 기온저하 등), 안전점검, 고장 등 현장 상황에 따라 예고없이 변경될 수 있습니다.</p>
+                <p>– 탑승 대기 고객이 많을 경우 조기에 입장이 마감될 수 있습니다.</p>
+                <p>– 어트랙션에 따라 신장 제한이 있을 수 있습니다.</p>
+                <h1>• 장애인 우선 탑승제도 안내</h1>
+                <p>– 탑승을 원하는 놀이시설 직원에게 탑승 의사를 표현해 주시기 바랍니다.</p>
+                <p>– 직원의 탑승 가능 여부 확인 후 반드시 신체 건강한 성인(만18세 이상) 보호자와 함께 이용하여야 하며, 직원의 안내에 따라 대기하여 주시기 바랍니다.</p>
+                <p>– 놀이시설마다 대기시간이 상이할 수 있습니다.</p>
+                <p>– 입장 후 직원이 탑승 안내 및 도움을 드립니다.</p>
+                <div class="warning">
+                    <p>* 장애인 손님의 장애유무 확인이 어려울 경우 복지카드 확인이 필요합니다.</p>
+                    <p>* 원활한 이용을 위해 놀이시설 입구에 있는 이용안내문을 꼭 확인하여 주시기 바랍니다.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="ft_wrap2 clearFix">
+                <div class="logo">
+                    <a href="index.html"><img src="images/index_8_1.png" alt="logo"></a>
+                </div>
+                <div class="fnb_wrap">
+                    <ul class="fnb clearFix">
+                        <li>
+                            <a href="https://www.koreanfolk.co.kr/purchase/food_market.asp">
+                                한국민속촌 전통식품
+                            </a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="https://www.koreanfolk.co.kr/privacy/privacy_policy.asp">
+                                개인정보처리방침
+                            </a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="https://www.koreanfolk.co.kr/privacy/email_refusal.asp">
+                                이메일무단수집거부
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact">
+                        <p>경기도 용인시 기흥구 민속촌로 90 한국민속촌 <br>
+                            TEL 031. 288. 0000 Fax 031. 286. 4051</p>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2021 KoreanFolkVillage. All Right Reserved.</p>
+                    </div>
+                </div>
+                <ul class="sns clearFix">
+                    <li>
+                        <a href="https://www.instagram.com/koreanfolkvillage/">
+                            <img src="images/index_8_2.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/kfv1974">
+                            <img src="images/index_8_3.png" alt="naver blog">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/koreanfolkvillage">
+                            <img src="images/index_8_4.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCoE3Mxoze4a1hFeSSxDuxIg">
+                            <img src="images/index_8_5.png" alt="youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/koreanfolk">
+                            <img src="images/index_8_6.png" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
